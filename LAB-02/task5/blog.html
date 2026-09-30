@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task5</title>
+    <style>
+      body {
+        font-family: Arvo, sans-serif;
+        font-size: 16px;
+      }
+      .card {
+        border: 1px solid rgb(40, 39, 39);
+        border-radius: 8px;
+        padding: 10px;
+        margin: 11px 0;
+      }
+      .date {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Верхня панель (перенесена з head у body) -->
+    <header class="card">
+      <h2>Останні новини</h2>
+      <p>
+        <a href="#">Головна</a>&nbsp;&nbsp; <a href="#">Новини</a>&nbsp;&nbsp;
+        <a href="#">Контакти</a>
+      </p>
+    </header>
+
+    <!-- Основний контент (таблична сітка) -->
+    <table border="0" width="100%" cellpadding="10" cellspacing="0">
+      <tr style="vertical-align: top">
+        <!-- Ліва колонка -->
+        <td style="width: 70%">
+          <fieldset class="card">
+            <h3>Відкрито новий кампус університету</h3>
+            <p class="date">1 вересня 2026</p>
+            <p>
+              Короткий текст новини про відкриття нового кампусу для
+              студентів...
+            </p>
+            <p><b>Автор: Ірина Коваль</b></p>
+          </fieldset>
+
+          <fieldset class="card">
+            <h3>Стартував конкурс студентських проєктів</h3>
+            <p class="date">5 вересня 2026</p>
+            <p>Опис умов участі та термінів подачі заявок на конкурс...</p>
+            <p><b>Автор: Олег Петренко</b></p>
+          </fieldset>
+
+          <fieldset class="card">
+            <h3>Результати літньої практики</h3>
+            <p class="date">10 вересня 2026</p>
+            <p>
+              Короткий підсумок практики студентів у партнерських компаніях...
+            </p>
+            <p><b>Автор: Марія Шевчук</b></p>
+          </fieldset>
+        </td>
+
+        <!-- Права колонка -->
+        <td style="width: 30%">
+          <fieldset class="card">
+            <h3>Популярне</h3>
+            <ul>
+              <li>
+                <a href="https://www.bbc.com/news/articles/c6vgy0333dppo"
+                  >Rogue OpenAI agent 'infiltrated' Australian government
+                  website in world first</a
+                >
+              </li>
+              <li>
+                <a href="https://www.bbc.com/news/articles/cqm2mg34x2v7o"
+                  >Judge temporarily overturns Trump's White House media ban</a
+                >
+              </li>
+              <li>
+                <a href="https://www.bbc.com/news/videos/c6804ne8knklo"
+                  >Watch: Trump greets China's Xi beside plane in rare
+                  presidential welcome for foreign leader</a
+                >
+              </li>
+              <li>
+                <a href="https://www.bbc.com/news/articles/cqzjzl3d1409o"
+                  >Teen rocker Nene Royal becomes first Thai to win America's
+                  Got Talent</a
+                >
+              </li>
+            </ul>
+          </fieldset>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Підвал (перенесений усередину body) -->
+    <footer>
+      <fieldset class="card">
+        <p>
+          &copy; 2026. Latest news . Водько Марія Іванівна, гр.243А .
+          <a href="mailto:vodko.mariia@chnu.edu.ua">vodko.mariia@chnu.edu.ua</a>
+        </p>
+      </fieldset>
+    </footer>
+  </body>
+</html>
