@@ -1,0 +1,27 @@
+a {
+  color: #da0acc;
+}
+
+.main-green {
+  color: #14ce14;
+}
+
+ul li ul {
+  list-style-type: none;
+}
+
+.square-list {
+  list-style-type: square;
+}
+
+.list-style-image {
+  list-style-image: url("galochka.jpg");
+}
+
+.square-list a {
+  text-decoration: none;
+}
+
+ol {
+  list-style-position: inside;
+}

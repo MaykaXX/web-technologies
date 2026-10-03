@@ -1,0 +1,49 @@
+.text-background span {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+div .text-background span {
+  background-color: #fffb00;
+}
+
+span span {
+  background-color: #818079;
+  text-decoration: line-through;
+}
+
+ol span span {
+  font-size: 18px;
+  text-decoration: uppercase;
+}
+
+section > p {
+  text-shadow: 3px 3px 5px #f42ac5;
+  text-indent: 50px;
+}
+
+li > ul {
+  list-style-image: url("galochka.jpg");
+}
+
+div > .text-background {
+  word-spacing: 50px;
+}
+
+.text-bold > p {
+  font-weight: bold;
+}
+
+.text-bold > section > p {
+  line-height: 45px;
+}
+
+img + p {
+  background-color: #a52a2a;
+  color: black;
+}
+
+section ~ p {
+  color: red;
+}
