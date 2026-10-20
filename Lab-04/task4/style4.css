@@ -15,7 +15,7 @@ span span {
 
 ol span span {
   font-size: 18px;
-  text-decoration: uppercase;
+  text-transform: uppercase;
 }
 
 section > p {
@@ -24,7 +24,7 @@ section > p {
 }
 
 li > ul {
-  list-style-image: url("galochka.jpg");
+  list-style-image: url("../src/galochka.jpg");
 }
 
 div > .text-background {
