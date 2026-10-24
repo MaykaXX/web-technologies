@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+/* Сцена - опорний елемент для абсолютного позиціонування */
+.scene {
+    position: relative;
+    width: 860px;
+    height: 680px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #b9b9b9, #c4c4c4);
+    overflow: hidden;
+}
+
+/* ===== Картка (z-index: 2) ===== */
+.card {
+    position: absolute;
+    left: 123px;
+    top: 27px;
+    width: 464px;
+    height: 503px;
+    background-color: #000;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.45);
+    z-index: 2;
+}
+
+.card-temp {
+    position: absolute;
+    left: 22px;
+    bottom: 20px;
+    font-size: 130px;
+    font-weight: 700;
+    line-height: 1;
+    color: #9a9a9a;
+}
+
+/* ===== Хмара (z-index: 3) - складається з розмитих білих плям ===== */
+.cloud {
+    position: absolute;
+    left: 215px;
+    top: 105px;
+    width: 620px;
+    height: 310px;
+    z-index: 3;
+    /* нижній край поступово зникає */
+    -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+}
+
+.cloud-part {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    filter: blur(14px);
+    opacity: 0.95;
+}
+
+.cloud-part--1 { left: 10px;  top: 170px; width: 300px; height: 90px; }
+.cloud-part--2 { left: 70px;  top: 70px;  width: 260px; height: 140px; }
+.cloud-part--3 { left: 230px; top: 20px;  width: 230px; height: 160px; }
+.cloud-part--4 { left: 320px; top: 70px;  width: 240px; height: 150px; }
+.cloud-part--5 { left: 200px; top: 150px; width: 340px; height: 110px; }
+
+/* ===== Чорний прямокутник над хмарою (z-index: 4) ===== */
+.card-mask {
+    position: absolute;
+    left: 293px;
+    top: 360px;
+    width: 125px;
+    height: 40px;
+    background-color: #000;
+    z-index: 4;
+}
+
+/* ===== Панель прогнозу (під карткою, z-index: 1) ===== */
+.forecast {
+    position: absolute;
+    left: 348px;
+    top: 402px;
+    width: 464px;
+    height: 268px;
+    background-color: #cdcdcd;
+    box-shadow: 8px 8px 6px #8c8c8c;
+    z-index: 1;
+}
+
+.forecast-list {
+    position: absolute;
+    left: 27px;
+    bottom: 48px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.forecast-day {
+    width: 93px;
+}
+
+.forecast-name,
+.forecast-temp {
+    display: block;
+}
+
+.forecast-name {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 8px;
+}
+
+.forecast-temp {
+    font-size: 26px;
+    color: #333;
+}
+
+/* ===== Кнопки-стрілки (z-index: 5) ===== */
+.arrow {
+    position: absolute;
+    top: 175px;
+    width: 92px;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 100;
+    text-decoration: none;
+    color: #333;
+    background-color: #808080;
+    opacity: 0.6;
+    z-index: 5;
+    transition: opacity 0.2s;
+}
+
+.arrow-prev {
+    left: 32px;
+}
+
+.arrow-next {
+    left: 124px;
+}
+
+.arrow:hover {
+    opacity: 0.9;
+}

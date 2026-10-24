@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №6. Завдання 5. Прогноз погоди</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="../common.css">
+</head>
+<body>
+<a class="next-prev" href="../task4/task4.html"> <- Попереднє завдання</a>
+<a class="next-prev" href="../task6/task6.html"> Настепне завдання -></a>
+</br>
+</br>
+<div class="scene">
+
+    <!-- Панель прогнозу: лежить під карткою -->
+    <div class="forecast">
+        <ul class="forecast-list">
+            <li class="forecast-day"><span class="forecast-name">Mon</span><span class="forecast-temp">17°</span></li>
+            <li class="forecast-day"><span class="forecast-name">Tue</span><span class="forecast-temp">19°</span></li>
+            <li class="forecast-day"><span class="forecast-name">Wed</span><span class="forecast-temp">16°</span></li>
+            <li class="forecast-day"><span class="forecast-name">Thu</span><span class="forecast-temp">18°</span></li>
+            <li class="forecast-day"><span class="forecast-name">Fri</span><span class="forecast-temp">21°</span></li>
+        </ul>
+    </div>
+
+    <!-- Чорна картка -->
+    <div class="card">
+        <span class="card-temp">17</span>
+    </div>
+
+    <!-- Хмара поверх картки -->
+    <div class="cloud">
+        <span class="cloud-part cloud-part--1"></span>
+        <span class="cloud-part cloud-part--2"></span>
+        <span class="cloud-part cloud-part--3"></span>
+        <span class="cloud-part cloud-part--4"></span>
+        <span class="cloud-part cloud-part--5"></span>
+    </div>
+
+    <!-- Чорний прямокутник, що перекриває низ хмари -->
+    <div class="card-mask"></div>
+
+    <!-- Напівпрозорі кнопки-стрілки -->
+    <a class="arrow arrow-prev" href="#" title="Назад">&larr;</a>
+    <a class="arrow arrow-next" href="#" title="Вперед">&rarr;</a>
+
+</div>
+</body>
+</html>

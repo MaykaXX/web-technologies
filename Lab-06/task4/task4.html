@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №6. Завдання 4. Навігаційні панелі</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="../common.css">
+</head>
+<body>
+<a class="next-prev" href="../task3/task3.html"> <- Попереднє завдання</a>
+<a class="next-prev" href="../task5/task5.html"> Наступне завдання -></a>
+</br>
+</br>
+
+<nav class="v-nav">
+    <ul class="v-nav-list">
+        <li class="v-nav-item active">
+            <a href="#"><img src="../icons/apps.png" alt="">Головна</a>
+        </li>
+        <li class="v-nav-item has-sub">
+            <a href="#"><img src="../icons/news.png" alt="">Новини</a>
+            <ul class="v-nav-sub">
+                <li class="v-nav-item"><a href="#">Світ</a></li>
+                <li class="v-nav-item has-sub">
+                    <a href="#">Україна</a>
+                    <ul class="v-nav-sub">
+                        <li class="v-nav-item"><a href="#">Політика</a></li>
+                        <li class="v-nav-item"><a href="#">Економіка</a></li>
+                        <li class="v-nav-item"><a href="#">Спорт</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="v-nav-item has-sub">
+            <a href="#"><img src="../icons/photos.png" alt="">Фото</a>
+            <ul class="v-nav-sub">
+                <li class="v-nav-item has-sub">
+                    <a href="#">Альбоми</a>
+                    <ul class="v-nav-sub">
+                        <li class="v-nav-item"><a href="#">Подорожі</a></li>
+                        <li class="v-nav-item"><a href="#">Родина</a></li>
+                    </ul>
+                </li>
+                <li class="v-nav-item"><a href="#">Нещодавні</a></li>
+            </ul>
+        </li>
+        <li class="v-nav-item has-sub">
+            <a href="#"><img src="../icons/documents.png" alt="">Документи</a>
+            <ul class="v-nav-sub">
+                <li class="v-nav-item"><a href="#">Мої файли</a></li>
+                <li class="v-nav-item has-sub">
+                    <a href="#">Спільні</a>
+                    <ul class="v-nav-sub">
+                        <li class="v-nav-item"><a href="#">Навчання</a></li>
+                        <li class="v-nav-item"><a href="#">Робота</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="v-nav-item">
+            <a href="#"><img src="../icons/contacts.png" alt="">Контакти</a>
+        </li>
+        <li class="v-nav-item">
+            <a href="#"><img src="../icons/maps.png" alt="">Карти</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Горизонтальна панель: fixed, лише піктограми, останній пункт - справа (float) -->
+<nav class="h-nav h-nav--fixed">
+    <ul class="h-nav-list">
+        <li class="h-nav-item active">
+            <a href="#" title="Головна"><img src="../icons/apps.png" alt="Головна"></a>
+        </li>
+        <li class="h-nav-item">
+            <a href="#" title="Пошук"><img src="../icons/search.png" alt="Пошук"></a>
+        </li>
+        <li class="h-nav-item">
+            <a href="#" title="Пошта"><img src="../icons/mail.png" alt="Пошта"></a>
+            <ul class="h-nav-sub">
+                <li><a href="#">Вхідні</a></li>
+                <li><a href="#">Надіслані</a></li>
+                <li><a href="#">Чернетки</a></li>
+            </ul>
+        </li>
+        <li class="h-nav-item">
+            <a href="#" title="Календар"><img src="../icons/calendar.png" alt="Календар"></a>
+            <ul class="h-nav-sub">
+                <li><a href="#">День</a></li>
+                <li><a href="#">Тиждень</a></li>
+                <li><a href="#">Місяць</a></li>
+            </ul>
+        </li>
+        <li class="h-nav-item">
+            <a href="#" title="Сповіщення"><img src="../icons/bell.png" alt="Сповіщення"></a>
+            <ul class="h-nav-sub">
+                <li><a href="#">Нові</a></li>
+                <li><a href="#">Архів</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<main class="content">
+    <section class="section">
+        <h1>Навігаційні панелі</h1>
+        <p>Угорі сторінки закріплена (<code>position: fixed</code>) горизонтальна панель, ліворуч - вертикальна панель на всю висоту. Прокрутіть сторінку, щоб побачити «липку» панель нижче.</p>
+    </section>
+
+    <!-- Липка (sticky) горизонтальна панель -->
+    <nav class="h-nav h-nav--sticky">
+        <ul class="h-nav-list">
+            <li class="h-nav-item active">
+                <a href="#" title="Головна"><img src="../icons/apps.png" alt="Головна"></a>
+            </li>
+            <li class="h-nav-item">
+                <a href="#" title="Пошук"><img src="../icons/search.png" alt="Пошук"></a>
+            </li>
+            <li class="h-nav-item">
+                <a href="#" title="Чат"><img src="../icons/chat.png" alt="Чат"></a>
+                <ul class="h-nav-sub">
+                    <li><a href="#">Особисті</a></li>
+                    <li><a href="#">Групи</a></li>
+                </ul>
+            </li>
+            <li class="h-nav-item">
+                <a href="#" title="Пошта"><img src="../icons/mail.png" alt="Пошта"></a>
+                <ul class="h-nav-sub">
+                    <li><a href="#">Вхідні</a></li>
+                    <li><a href="#">Надіслані</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <h2>Розділ 1</h2>
+        <p>Ця панель «липка»: спочатку вона розташована у потоці документа, а при прокручуванні прилипає під фіксованою панеллю (<code>position: sticky; top: 56px</code>).</p>
+    </section>
+    <section class="section">
+        <h2>Розділ 2</h2>
+        <p>Текст для прокручування сторінки.</p>
+    </section>
+    <section class="section">
+        <h2>Розділ 3</h2>
+        <p>Текст для прокручування сторінки.</p>
+    </section>
+    <section class="section">
+        <h2>Розділ 4</h2>
+        <p>Текст для прокручування сторінки.</p>
+    </section>
+</main>
+
+</body>
+</html>

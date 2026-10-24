@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: white;
+}
+
+/* Батьківський елемент: відносно нього позиціонуються блоки */
+.wrapper {
+    position: relative;
+    width: 910px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+/* Спільні стилі для всіх блоків */
+.block {
+    position: absolute;
+    width: 430px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 2px solid #222;
+    font-size: 28px;
+    line-height: 96px;
+    text-align: center;
+}
+
+/* Верхній ряд */
+.block-1 {
+    top: 0;
+    left: 0;
+    background-color: #4f86d6;
+    color: white;
+}
+
+.block-2 {
+    top: 0;
+    right: 0;
+    background-color: #00b050;
+    color: #111;
+}
+
+/* Нижній ряд */
+.block-3 {
+    bottom: 0;
+    left: 0;
+    background-color: #00b050;
+    color: #111;
+}
+
+.block-4 {
+    bottom: 0;
+    right: 0;
+    background-color: #4f86d6;
+    color: white;
+}
