@@ -197,6 +197,7 @@ body {
     color: #d9d9e3;
 }
 
+/*кружок*/
 .form-hints li:before {
     content: '';
     display: inline-block;

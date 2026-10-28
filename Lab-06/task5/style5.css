@@ -37,7 +37,7 @@ body {
     color: #9a9a9a;
 }
 
-/* ===== Хмара (z-index: 3) - складається з розмитих білих плям ===== */
+/* ===== Хмара (z-index: 3)===== */
 .cloud {
     position: absolute;
     left: 215px;
@@ -45,35 +45,33 @@ body {
     width: 620px;
     height: 310px;
     z-index: 3;
-    /* нижній край поступово зникає */
-    -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
-    mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
 }
 
 .cloud-part {
     position: absolute;
     background-color: #fff;
     border-radius: 50%;
-    filter: blur(14px);
-    opacity: 0.95;
+    filter: blur(10px);
+    opacity: 0.75;
 }
 
 .cloud-part--1 { left: 10px;  top: 170px; width: 300px; height: 90px; }
 .cloud-part--2 { left: 70px;  top: 70px;  width: 260px; height: 140px; }
 .cloud-part--3 { left: 230px; top: 20px;  width: 230px; height: 160px; }
 .cloud-part--4 { left: 320px; top: 70px;  width: 240px; height: 150px; }
-.cloud-part--5 { left: 200px; top: 150px; width: 340px; height: 110px; }
+.cloud-part--5 { left: 100px; top: 160px; width: 340px; height: 110px; }
+.cloud-part--6 { left: 250px; top: 160px; width: 340px; height: 110px; }
 
 /* ===== Чорний прямокутник над хмарою (z-index: 4) ===== */
-.card-mask {
-    position: absolute;
-    left: 293px;
-    top: 360px;
-    width: 125px;
-    height: 40px;
-    background-color: #000;
-    z-index: 4;
-}
+/*.card-mask {*/
+/*    position: absolute;*/
+/*    left: 293px;*/
+/*    top: 400px;*/
+/*    width: 125px;*/
+/*    height: 40px;*/
+/*    background-color: #000;*/
+/*    z-index: 4;*/
+/*}*/
 
 /* ===== Панель прогнозу (під карткою, z-index: 1) ===== */
 .forecast {

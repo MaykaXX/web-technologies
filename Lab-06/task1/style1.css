@@ -7,6 +7,7 @@ body {
 
 /* Батьківський елемент: відносно нього позиціонуються блоки */
 .wrapper {
+    /*border: 4px solid #8d0019;*/
     position: relative;
     width: 910px;
     height: 250px;
